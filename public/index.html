@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Super Scraped News!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Link to Typography -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+    
+</head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">SUPER SCRAPED NEWS!</h1>
+      </div>
+          
+      <!-- Div where articles will be displayed in cards -->
+      <div class="card-columns" id="articles">
+      </div>
+      
+      <!-- Modal for adding/saving notes  -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group" id="note-title">
+                    <label for="titleinput" class="col-form-label"></label>
+                  </div>
+                  <div class="form-group" id="note-body">
+                    <label for="bodyinput" class="col-form-label"></label>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer" id = "save-note-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal to VIEW/READ notes -->
+      <div class="modal fade" id="see-notes-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header" id = "viewmodal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="notes-view">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Modal for letting user know that new record added sucessfully -->
+     <div class="modal modal-3" id="success-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Super!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <h4>New Note added SUPERbly!</h4>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+          <span class="text-muted">By Dominique McLean</span>
+        </div>
+    </footer>
+
+  <!-- SCRIPT LINKS -->
+  <!-- Bootstrap jQuery Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!--My JS File  -->
+  <script src="./assets/js/app.js"></script>
+  </body>
+</html>
